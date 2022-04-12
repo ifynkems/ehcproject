@@ -1,0 +1,20 @@
+{
+  "name": "ehc-giftdata",
+  "version": "0.0.1",
+  "description": "A LIST OF GIFTED STIPEND TO EHC",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "OBIOKAFOR IFEYINWA N",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.10",
+    "nodemon": "^2.0.15"
+  }
+}
