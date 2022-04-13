@@ -1,7 +1,11 @@
 // get the packages
+Const .env = require("dotenv")
+env.config()
+
 const express = require("express")
 const { request } = require("http")
 const mongoose = require("mongoose")
+const { env } = require("process")
 const giftdataModel = require("./Models/apiModel.js")
 
 // initialize 
@@ -11,7 +15,8 @@ app.use(express.json())
 
 // connect tha database
 mongoose.connect(
-    "mongodb+srv://apiEhc-giftdata:ifynwa@cluster0.ns1gm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+   process.env.MONGO_URL
+   ,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -115,7 +120,8 @@ app.delete('/item/:id', async function(req,res){
         }
         })
     
-//listen at a point 8683
-app.listen(8683, function () {
+        const PORT = Pprocess.env.PORT ||8000
+//listen at a point 
+app.listen(PORT, function () {
     console.log('Server running sucessfully')
 })
