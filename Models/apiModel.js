@@ -23,7 +23,7 @@ const giftdataSchema = new Schema({
         type : Number, 
     }
 },
-{timeStamp: true},
+{timeStamp:true},
 )
 // change to a Model
 const giftdataModel = mongoose.model("giftdataModel", giftdataSchema)
