@@ -1,7 +1,10 @@
+// "dev" : "nodemon index.js"
+
 // get the packages
 Const .env = require("dotenv")
 env.config()
 
+const heroku = reqire("heroku")
 const express = require("express")
 const { request } = require("http")
 const mongoose = require("mongoose")
@@ -120,8 +123,8 @@ app.delete('/item/:id', async function(req,res){
         }
         })
     
-    const PORT = Pprocess.env.PORT ||8000
+    //const PORT = process.env.PORT ||8000
 //listen at a point 
-app.listen(PORT, function () {
+app.listen(8683, function () {
     console.log('Server running sucessfully')
 })
