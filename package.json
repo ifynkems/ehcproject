@@ -4,8 +4,8 @@
   "description": "A LIST OF GIFTED STIPEND TO EHC",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
-    
+    "start": "nodemon index.js",
+    "dev" : "nodemon index.js"
   },
   "keywords": [
     "API"
