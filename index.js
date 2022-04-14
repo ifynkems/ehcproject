@@ -34,8 +34,8 @@ mongoose.connect(
 
 
 // routes
-app.get('/', function (req, res) {
-    res.send('Welcome to EmpowerHer Community')
+app.get('/', async function (req, res) {
+    await res.send('Welcome to EmpowerHer Community')
 })
 
 //app.get('/api',function(req,res){
