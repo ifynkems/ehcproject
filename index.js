@@ -1,10 +1,10 @@
 
 
 // get the packages
-Const .env = require("dotenv")
+const dotenv = require("dotenv")
 env.config()
 
-const heroku = reqire("heroku")
+const heroku = require("heroku")
 const express = require("express")
 const { request } = require("http")
 const mongoose = require("mongoose")
